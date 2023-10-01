@@ -7,6 +7,20 @@
     <title>Djikstra's Algorithm Visualiser</title>
 </head>
 <body>
+    <header>
+        <h1>
+            Djikstra's Algorithm
+        </h1>
+        <p>
+            <ol>
+                <li>Select the nodes in the spacebe below and click "SELECT NODES"</li>
+                <li>Select pairs of nodes and click "ADD EDGE" to connect them</li>
+                <li>Cick on "CONFIRM GRAPH" when you've created the desired connections</li>
+                <li>Cick on a node to select it as the root for the search.</li>
+                <li>Click on "RUN ALGORITHM to find the shortest path from node 1 to the other nodes</li>
+            </ol>
+        </p>
+    </header>
     <main>
         <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
         <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
@@ -42,10 +56,12 @@
         <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
         <div></div> <div></div> <div></div> <div></div>
     </main>
+    <p id="djikstra-result"></p>
     <section>
-        <button id="nodes-button">NODES SELECTION DONE</button>
+        <button id="nodes-button">SELECT NODES</button>
         <button id="edges-button">ADD EDGE</button>
         <button id="confirm">CONFIRM GRAPH</button>
+        <button id="run-algorithm">RUN ALGORITHM</button>
     </section>
 
     <svg style="z-index: -1; pointer-events: none; position: absolute; width: 100vw; height: 100vh; top: 0; left: 0;"></svg>

@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: rgb(146, 182, 177);
 }
 
 main {
@@ -9,7 +9,45 @@ main {
     gap: 2px; /* Adjust the gap between divs as needed */
     justify-content: center;
     align-content: center;
-    height: 100vh; /* Center vertically */
+    /* height: 100vh; Center vertically */
+}
+
+header {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    margin: auto;
+}
+
+button {
+    width: 196px;
+    margin: 0;
+    padding: 8px 0px;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+button:hover {
+    position: relative;
+    top: -2px;
+    background-color: goldenrod;
+    border-right: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+}
+
+button:active {
+    position: inherit;
+    background-color: rgb(151, 115, 22);
+    border-left: 2px solid gray;
+    border-top: 2px solid gray;
 }
 
 div {
@@ -17,7 +55,7 @@ div {
     width: 50px;
     height: 50px;
     background-color: rgb(165, 92, 92);
-    border: 2px solid rgb(48, 33, 33);
+    border: 1px solid rgb(48, 33, 33);
     text-align: center;
     font-size: 30px;
     border-radius: 100%;
@@ -47,6 +85,15 @@ div:active {
     background-color: goldenrod;
 }
 
+.root {
+    background-color: blueviolet;
+}
 .erase {
     visibility: hidden;
+}
+
+#djikstra-result {
+    font-size: 30px;
+    text-align: center;
+    white-space: pre-line;
 }
