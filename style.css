@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(146, 182, 177);
+    background-color: rgb(88, 131, 137);
 }
 
 main {
@@ -9,21 +9,25 @@ main {
     gap: 2px; /* Adjust the gap between divs as needed */
     justify-content: center;
     align-content: center;
+    max-width: 910px;
     /* height: 100vh; Center vertically */
 }
 
 header {
     max-width: 800px;
-    margin: auto;
+    margin-left: 50px;
+    background-color: rgb(88, 131, 137);
+    border: 4px solid whitesmoke;
+    border-radius: 30px;
 }
 
-h2 {
+h1, h2 {
     text-align: center;
 }
 
 section {
     max-width: 800px;
-    margin: auto;
+    margin-left: 50px;
 }
 
 button {
@@ -93,7 +97,27 @@ div:active {
 }
 
 #djikstra-result {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     white-space: pre-line;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 700px 1fr; /* Sidebar with 300px width and the rest for content */
+    grid-template-rows: repeat(3, auto); /* Three rows for the elements */
+    gap: 0px; /* Adjust the gap as needed */
+}
+
+article {
+    grid-row: span 3; /* Make the article span all three rows */
+    background-color: rgb(88, 131, 137);
+    border: 4px solid whitesmoke;
+    border-radius: 30px;
+    margin-left: 400px;
+}
+
+/* Styling for the elements (you can customize this) */
+article, header, main, section {
+    padding: 10px;
 }

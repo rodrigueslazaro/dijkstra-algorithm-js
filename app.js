@@ -148,7 +148,7 @@ runDjikstra.addEventListener("click", function() {
   let lines = [];
   for (const key in shortestDistances) {
     if (shortestDistances.hasOwnProperty(key)) {
-      lines.push(`From ${startNode} to ${key}: distance ${shortestDistances[key]}.`);
+      lines.push(`${startNode}-${key}: d${shortestDistances[key]}.`);
     }
   }
   const output = lines.join("\n\n");
